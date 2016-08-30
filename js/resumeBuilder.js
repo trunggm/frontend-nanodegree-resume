@@ -93,3 +93,47 @@ $("#header").prepend(formattedEmail);
 $("#header").prepend(formattedRole);
 
 $("#header").prepend(formattedName);
+
+// add education object
+var education = {
+                  name: "DHBK",
+                  degree: "Student",
+                  date: "2011",
+                  location: "HaNoi, VietNam",
+                  major: "Math"
+                }
+
+// add work object
+var work = {
+              employer: "Developer",
+              title: "Front-End",
+              date: "2015",
+              location: "HaNoi, VietNam",
+              desc: "front end developer."
+            }
+work["position"]="Monday";
+// change to formatted and add to html
+var formattedWorkEmployer = HTMLworkEmployer.replace("%data", work.employer);
+
+var formattedWorkTitle = HTMLworkTitle.replace("%data", work.title);
+
+var formattedWorkDate = HTMLworkDates.replace("%data", work.date);
+
+var formattedWorkLocation = HTMLworkLocation.replace("%data", work.location);
+
+var formattedWorkDesc = HTMLworkDescription.replace("%data", work.desc);
+
+var formattedSchoolName = HTMLschoolName.replace("%data", education.name);
+
+var formattedSchoolDegree = HTMLschoolDegree.replace("%data", education.degree);
+
+var formattedSchoolDate = HTMLschoolDates.replace("%data", education.date);
+
+var formattedSchoolLocation = HTMLschoolLocation.replace("%data", education.location);
+
+var formatedSchollMajor = HTMLschoolMajor.replace("%data", education.major);
+
+// append to work position and education position
+$("#main").append(work["position"]);
+
+$("#main").append(education.name);
