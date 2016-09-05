@@ -70,7 +70,7 @@ var education = {
                 name: "Hanoi University of Science",
                 location: "HaNoi, VietNam",
                 degree: "engineer",
-                majors: "Applied Mathematics",
+                majors: ["Applied Mathematics"],
                 dates: "2012 - 2017",
                 url: "http://hust.edu.vn/web/vi/home"
               }
@@ -110,10 +110,15 @@ function displayEdu() {
       var schoolDegree = HTMLschoolDegree.replace('%data%', item.degree);
       var schoolDates = HTMLschoolDates.replace('%data%', item.dates);
       var schoolLocation = HTMLschoolLocation.replace('%data%', item.location);
-      var schoolMajors = HTMLschoolMajor.replace('%data%', item.majors);
-
       // append to education-entry
-      educationEntry.append(schoolName + schoolDegree, schoolDates, schoolLocation, schoolMajors);
+      educationEntry.append(schoolName + schoolDegree, schoolDates, schoolLocation);
+
+      if (item.majors.length>0) {
+        item.majors.forEach ( function (major) {
+          var schoolMajor = HTMLschoolMajor.replace('%data%', major);
+          educationEntry.append(schoolMajor);
+        });
+      }
     });
   }
 
