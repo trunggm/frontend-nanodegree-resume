@@ -25,10 +25,10 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
-  color: #f5a623;
-  line-height: 48px;
-  display: inline;
+	font-size: 40px;
+	color: #3a9ad9;
+	line-height: 48px;
+	display: inline;
 }
 
 h2 {
@@ -100,8 +100,8 @@ a {
 }
 
 #skills-h3 {
-  color: #f5ae23;
-  display: none;
+	color: #3A9AD9;
+	display: none;
 }
 
 .orange {
@@ -109,7 +109,7 @@ a {
 }
 
 .orange-text {
-  color: #f5ae23;
+	color: #3a9ad9;
 }
 
 .white-text {
@@ -174,6 +174,37 @@ span {
 #lets-connect {
   text-align: center;
 }
+
+/* custom my site */
+.dark-blue-gray {
+	background-color: #354458!important;
+}
+
+.red-orange-text {
+	color: #eb7260!important;
+}
+
+.white-brown-text {
+	color: #e9e0d6!important;
+}
+
+.sky-blue {
+	background-color: #3a9ad9!important;	
+}
+
+.green-light {
+	background-color: #29aba4!important;	
+}
+
+span {
+	color: #e9e0d6; 	
+}
+
+
+
+
+
+
 
 /* Media queries to handle various device widths */
 
